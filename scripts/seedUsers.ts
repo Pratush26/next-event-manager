@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import * as bcrypt from "bcrypt";
-import clientPromise from "../src/lib/connectDB";
+import clientPromise from "@/lib/MongoClient";
 
 async function seedUsers() {
   const client = await clientPromise;
